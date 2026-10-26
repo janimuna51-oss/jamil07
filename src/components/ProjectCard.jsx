@@ -19,7 +19,7 @@ const ProjectCard = ({ projects }) => {
           if (offset > 2 && offset !== projects.length - 1) return null; // Show only top 3 cards in stack
 
           return (
-            <motion.div
+            <motion.div add .
               key={project.id}
               initial={{ scale: 0.8, opacity: 0, y: 50 }}
               animate={{ 
