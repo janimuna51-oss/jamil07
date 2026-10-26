@@ -70,7 +70,7 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
-      image: "https://www.dreamstime.com/finger-touch-human-robot-sparks-wallpaper-design-harmonious-background-human-hand-reaches-out-to-touch-image397862864"
+      image: "https://www.magnific.com/free-photos-vectors/robotic-hand-wallpaper"
     },
     {
       id: 8,
