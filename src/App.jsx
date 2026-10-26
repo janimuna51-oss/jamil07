@@ -10,6 +10,7 @@ import ResumeModal from './components/ResumeModal';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import heroImage from './assets/hero.png';
+import aiAgentImage from './assets/ai-agent.jpg'; // <-- Local image import
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -70,7 +71,7 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
-      image: "https://www.magnific.com/free-photos-vectors/robotic-hand-wallpaper"
+      image: aiAgentImage // <-- Custom local image path
     },
     {
       id: 8,
@@ -82,14 +83,12 @@ function App() {
       id: 9,
       title: "YouTube Automation",
       category: "CONTENT",
-      // EXACT FIX: Social media & YouTube ecosystem branding image matching reference
-      image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 10,
       title: "Grow Business",
       category: "STRATEGY",
-      // EXACT FIX: High-end corporate boardroom teamwork strategy image matching reference
       image: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=1000&q=80"
     }
   ];
