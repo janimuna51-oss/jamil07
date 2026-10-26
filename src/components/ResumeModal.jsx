@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Download, Briefcase, GraduationCap, Code, Award } from 'lucide-react';
+import { X, Download, Briefcase, GraduationCap, Code } from 'lucide-react';
 
 const ResumeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -9,7 +9,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
     <AnimatePresence>
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
         
-        {/* 3D Animated Modal Box */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotateX: 15 }}
           animate={{ opacity: 1, scale: 1, rotateX: 0 }}
@@ -17,7 +16,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
           transition={{ duration: 0.5, type: "spring", stiffness: 120, damping: 20 }}
           className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#0d0d12] border-2 border-amber-500/40 rounded-3xl p-8 shadow-[0_0_60px_rgba(245,158,11,0.3)] text-neutral-100 font-sans"
         >
-          {/* Close Button */}
           <button 
             onClick={onClose}
             className="absolute top-6 right-6 p-2 rounded-full bg-neutral-900 border border-neutral-700 hover:border-amber-400 text-neutral-400 hover:text-amber-400 transition-all cursor-pointer"
@@ -25,7 +23,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
             <X size={20} />
           </button>
 
-          {/* Header */}
           <div className="mb-8 border-b border-neutral-800 pb-6">
             <span className="text-xs font-mono tracking-widest text-amber-400 uppercase bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full">
               CURRICULUM VITAE
@@ -38,10 +35,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             </p>
           </div>
 
-          {/* Content Sections */}
           <div className="space-y-6 text-sm">
-            
-            {/* Experience */}
             <div>
               <h3 className="flex items-center gap-2 text-amber-400 font-semibold text-base mb-3 font-mono">
                 <Briefcase size={18} /> PROFESSIONAL EXPERIENCE
@@ -57,7 +51,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Skills */}
             <div>
               <h3 className="flex items-center gap-2 text-amber-400 font-semibold text-base mb-3 font-mono">
                 <Code size={18} /> CORE EXPERTISE & TECH STACK
@@ -71,7 +64,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Education */}
             <div>
               <h3 className="flex items-center gap-2 text-amber-400 font-semibold text-base mb-3 font-mono">
                 <GraduationCap size={18} /> EDUCATION & CERTIFICATIONS
@@ -84,10 +76,8 @@ const ResumeModal = ({ isOpen, onClose }) => {
                 <p className="text-neutral-300 text-xs mt-1">Specialized in Web Technologies, Software Architecture, and Artificial Intelligence.</p>
               </div>
             </div>
-
           </div>
 
-          {/* Modal Footer Actions */}
           <div className="mt-8 pt-6 border-t border-neutral-800 flex justify-end gap-4">
             <button 
               onClick={onClose}

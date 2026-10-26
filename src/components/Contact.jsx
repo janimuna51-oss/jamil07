@@ -23,8 +23,6 @@ const Contact = () => {
       <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-        
-        {/* Left Column */}
         <motion.div 
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +50,6 @@ const Contact = () => {
           </a>
         </motion.div>
 
-        {/* Right Column Form */}
         <motion.div 
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -131,7 +128,6 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
-
       </div>
     </section>
   );

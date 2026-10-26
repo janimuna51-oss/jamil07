@@ -61,11 +61,8 @@ const Testimonials = () => {
 
   return (
     <section className="w-full py-28 relative overflow-hidden flex flex-col items-center justify-center bg-gradient-to-b from-[#070707] via-neutral-950 to-[#070707]">
-      
-      {/* Background Ambient Glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-gradient-to-r from-purple-600/20 via-amber-500/20 to-emerald-600/20 rounded-full blur-[160px] pointer-events-none" />
 
-      {/* Section Header with Sub-badge */}
       <div className="text-center mb-16 px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -81,7 +78,6 @@ const Testimonials = () => {
         </motion.div>
       </div>
 
-      {/* Horizontal Running Marquee Background Strip */}
       <div className="w-full overflow-hidden relative mb-10 py-4 opacity-30 pointer-events-none flex">
         <motion.div 
           animate={{ x: ['0%', '-50%'] }}
@@ -105,7 +101,6 @@ const Testimonials = () => {
         </motion.div>
       </div>
 
-      {/* Foreground Main Zoomed Focus Card (Landscape Style Layout) */}
       <div className="relative z-20 flex items-center justify-center w-full max-w-2xl px-4 min-h-[350px]">
         <AnimatePresence mode="wait">
           {testimonialsData.map((item, idx) => {
@@ -125,7 +120,6 @@ const Testimonials = () => {
                 }}
                 className={`w-full h-[350px] p-8 sm:p-10 rounded-3xl border-2 bg-neutral-950/98 backdrop-blur-2xl shadow-2xl flex flex-col justify-between relative overflow-hidden group ${item.borderGlow}`}
               >
-                {/* Top Quote & Project Badge */}
                 <div className="flex items-center justify-between mb-4">
                   <Quote size={32} className="text-amber-400 opacity-90 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" />
                   <span className={`text-xs font-mono uppercase tracking-widest px-4 py-1.5 rounded-full border shadow-sm ${item.badgeColor}`}>
@@ -133,12 +127,10 @@ const Testimonials = () => {
                   </span>
                 </div>
 
-                {/* Main Review Quote */}
                 <p className="text-neutral-100 text-base sm:text-lg leading-relaxed font-sans italic my-auto font-light">
                   "{item.quote}"
                 </p>
 
-                {/* Rating Stars & Client Profile */}
                 <div className="flex items-center justify-between pt-4 border-t border-neutral-800/80 mt-auto">
                   <div className="flex items-center gap-3.5">
                     <img 
@@ -163,7 +155,6 @@ const Testimonials = () => {
           })}
         </AnimatePresence>
       </div>
-
     </section>
   );
 };
