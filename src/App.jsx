@@ -39,43 +39,63 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Smarttimes Marketing",
-      category: "MEDIA MARKETING",
-      desc: "Social media management and strategy execution for Smarttimes.",
-      tech: "Social Media • Marketing Strategy",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80"
+      title: "Web Developer",
+      category: "DEVELOPMENT",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 2,
-      title: "NexaPhysioCare Growth",
-      category: "DIGITAL GROWTH",
-      desc: "Digital presence expansion for physiotherapy and rehabilitation center.",
-      tech: "SEO • Lead Generation",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80"
+      title: "App Creator",
+      category: "MOBILE APP",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 3,
-      title: "Crypto Signal Tracker",
-      category: "APP DEVELOPMENT",
-      desc: "Real-time cryptocurrency signal tracking mobile and web app.",
-      tech: "React • Crypto API",
-      image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1000&q=80"
+      title: "Graphic Designer",
+      category: "DESIGN",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 4,
-      title: "Medical Setup Portals",
-      category: "WEB DEVELOPMENT",
-      desc: "Custom high-converting web applications for healthcare clinics.",
-      tech: "React • UI/UX • Web Apps",
-      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=80"
+      title: "Content Creator",
+      category: "MEDIA",
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 5,
-      title: "AI Work Automator",
-      category: "AI AGENTS",
-      desc: "Autonomous AI agent to automate professional employee tasks.",
-      tech: "AI Agents • Automation",
+      title: "Digital Marketing",
+      category: "MARKETING",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: 6,
+      title: "Leads Generation",
+      category: "GROWTH",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: 7,
+      title: "AI Agent",
+      category: "AUTOMATION",
       image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: 8,
+      title: "Software Creation",
+      category: "DEVELOPMENT",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: 9,
+      title: "YouTube Automation",
+      category: "CONTENT",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      id: 10,
+      title: "Grow Business",
+      category: "STRATEGY",
+      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80"
     }
   ];
 
@@ -236,7 +256,7 @@ function App() {
             <h2 className="text-3xl sm:text-5xl font-bold text-amber-400 mb-3" style={{ fontFamily: 'Flecha Medium, Georgia, serif' }}>
               Featured Work
             </h2>
-            <p className="text-neutral-400 text-sm font-sans">Click on the top card to shuffle through the 3D deck.</p>
+            <p className="text-neutral-400 text-sm font-sans">Explore our core services and specialized digital solutions.</p>
           </div>
 
           <ProjectCard projects={projects} />
