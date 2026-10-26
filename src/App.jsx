@@ -92,17 +92,13 @@ function App() {
       className="bg-[#070707] text-neutral-100 font-sans selection:bg-amber-500/30 overflow-x-hidden relative"
     >
       <CustomCursor />
-
-      {/* Floating WhatsApp Popup Button */}
       <WhatsAppFloat />
 
-      {/* Scroll Progress Bar */}
       <motion.div 
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-300 z-50 origin-left"
         style={{ scaleX }}
       />
 
-      {/* Navbar */}
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -252,13 +248,13 @@ function App() {
         <Testimonials />
       </section>
 
-      {/* 5. CONTACT SECTION ("LET'S CONNECT") */}
+      {/* 5. CONTACT SECTION */}
       <Contact />
 
       {/* 3D Resume Modal Component */}
       <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
 
-      {/* 6. FOOTER WITH GITHUB & LINKEDIN LINKS */}
+      {/* 6. FOOTER */}
       <Footer />
     </div>
   );
