@@ -70,6 +70,7 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
+      // FIX 1: Updated to a robotic/futuristic AI image
       image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80"
     },
     {
@@ -82,13 +83,15 @@ function App() {
       id: 9,
       title: "YouTube Automation",
       category: "CONTENT",
-      image: "https://images.unsplash.com/photo-1533750349077-cdcd106d29b2?auto=format&fit=crop&w=1000&q=80"
+      // FIX 2: Updated to clearly show a YouTube logo and dashboard visual
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 10,
       title: "Grow Business",
       category: "STRATEGY",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80"
+      // FIX 3: Updated to a unique professional teamwork visual (boardroom scene)
+      image: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=1000&q=80"
     }
   ];
 
