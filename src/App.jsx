@@ -10,7 +10,6 @@ import ResumeModal from './components/ResumeModal';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import heroImage from './assets/hero.png';
-import aiAgentImage from './assets/ai-agent.jpg'; // <-- Local image import
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -71,7 +70,8 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
-      image: aiAgentImage // <-- Custom local image path
+      // FIXED: Robotic / AI technology hand image
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 8,
@@ -89,7 +89,8 @@ function App() {
       id: 10,
       title: "Grow Business",
       category: "STRATEGY",
-      image: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=1000&q=80"
+      // FIXED: Realistic business developer / professional working person image
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
     }
   ];
 
