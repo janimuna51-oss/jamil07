@@ -70,7 +70,6 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
-      // EXACT FIX: Robotic hand / AI technology image matching reference
       image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80"
     },
     {
