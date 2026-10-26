@@ -19,13 +19,6 @@ function App() {
     restDelta: 0.001
   });
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -77,7 +70,7 @@ function App() {
       id: 7,
       title: "AI Agent",
       category: "AUTOMATION",
-      image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 8,
@@ -89,13 +82,13 @@ function App() {
       id: 9,
       title: "YouTube Automation",
       category: "CONTENT",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1533750349077-cdcd106d29b2?auto=format&fit=crop&w=1000&q=80"
     },
     {
       id: 10,
       title: "Grow Business",
       category: "STRATEGY",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80"
     }
   ];
 
@@ -245,7 +238,7 @@ function App() {
       </section>
 
       {/* 3. PORTFOLIO SECTION */}
-      <section id="portfolio" className="py-24 px-6 lg:px-16 max-w-6xl mx-auto border-t border-neutral-800/60">
+      <section id="portfolio" className="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-neutral-800/60">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
