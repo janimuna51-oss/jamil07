@@ -7,6 +7,8 @@ import ProjectCard from './components/ProjectCard';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import ResumeModal from './components/ResumeModal';
+import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
 import heroImage from './assets/hero.png';
 
 function App() {
@@ -24,10 +26,7 @@ function App() {
     }
   };
 
-  // State for 3D Resume Modal
   const [isResumeOpen, setIsResumeOpen] = useState(false);
-
-  // 3D Mouse Tracking State for Hero Person Image
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -93,6 +92,9 @@ function App() {
       className="bg-[#070707] text-neutral-100 font-sans selection:bg-amber-500/30 overflow-x-hidden relative"
     >
       <CustomCursor />
+
+      {/* Floating WhatsApp Popup Button */}
+      <WhatsAppFloat />
 
       {/* Scroll Progress Bar */}
       <motion.div 
@@ -171,7 +173,6 @@ function App() {
               transition={{ duration: 0.8, delay: 1.8 }}
               className="flex flex-wrap gap-4"
             >
-              {/* 3D Resume Modal Trigger Button */}
               <button 
                 onClick={() => setIsResumeOpen(true)} 
                 className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-neutral-950 font-semibold px-7 py-3.5 rounded-xl text-sm transition-all flex items-center gap-2 shadow-[0_0_25px_rgba(245,158,11,0.4)] cursor-pointer interactive"
@@ -179,7 +180,6 @@ function App() {
                 View Resume <ArrowRight size={16} />
               </button>
               
-              {/* Direct Mail to jamilrafiq51@gmail.com */}
               <a 
                 href="mailto:jamilrafiq51@gmail.com?subject=Portfolio Inquiry" 
                 className="border border-neutral-700 hover:border-amber-500/40 bg-neutral-900/60 hover:bg-neutral-900 px-7 py-3.5 rounded-xl text-neutral-200 text-sm transition-all flex items-center gap-2 cursor-pointer font-sans interactive no-underline"
@@ -252,16 +252,14 @@ function App() {
         <Testimonials />
       </section>
 
-      {/* 5. CONTACT SECTION ("LET'S CONNECT") with jamilrafiq51@gmail.com */}
+      {/* 5. CONTACT SECTION ("LET'S CONNECT") */}
       <Contact />
 
       {/* 3D Resume Modal Component */}
       <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
 
-      {/* Footer */}
-      <footer className="py-8 text-center text-neutral-500 text-xs border-t border-neutral-900 font-sans">
-        © {new Date().getFullYear()} Jamil.dev. All rights reserved.
-      </footer>
+      {/* 6. FOOTER WITH GITHUB & LINKEDIN LINKS */}
+      <Footer />
     </div>
   );
 }
